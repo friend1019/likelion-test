@@ -20,7 +20,7 @@ body {
     width: 20%;  /* 전체 너비의 20% 차지 */
     text-align: center;  /* 가운데 정렬 */
     display: grid;
-    align-content: center; /**/
+    align-content: center;  /* 컨텐츠를 수직 중앙 정렬 */
 }
 
 /* 네비게이션 바 스타일 */
@@ -44,19 +44,19 @@ ul.navbar {
 
 /* 세로 구분선 */
 .navbar_list::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px; /* 세로 구분선의 두께 */
-    height: 20px; /* 세로 구분선 길이 (짧게 설정) */
-    background-color: #ccc; /* 구분선 색상 */
+    content: '';  /* 구분선 추가 */
+    position: absolute;  /* 절대 위치 */
+    right: 0;  /* 오른쪽 끝에 위치 */
+    top: 50%;  /* 세로 중앙 위치 */
+    transform: translateY(-50%);  /* 정확히 중앙에 맞추기 */
+    width: 1px;  /* 세로 구분선의 두께 */
+    height: 20px;  /* 세로 구분선 길이 (짧게 설정) */
+    background-color: #ccc;  /* 구분선 색상 */
 }
 
 /* 마지막 항목은 구분선 제거 */
 .navbar_list:last-child::after {
-    content: none; /* 마지막 항목은 세로 구분선 없애기 */
+    content: none;  /* 마지막 항목은 세로 구분선 없애기 */
 }
 
 /* 무한 롤링 텍스트 (스크롤 효과) */
@@ -139,6 +139,7 @@ ul.navbar {
     border-radius: 50%;  /* 원 모양 */
 }
 
+/* 링크 스타일 (기본 링크 스타일 제거) */
 a {
     text-decoration: none;  /* 밑줄 제거 */
     color: inherit;         /* 부모 요소의 색상 상속 */

@@ -1,20 +1,23 @@
-body{
-    background-color: #8bc5ff;
+/* 배경 색상 설정 */
+body {
+    background-color: #8bc5ff;  /* 배경을 연한 파란색으로 설정 */
 }
 
-.card-container{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+/* 카드 컨테이너 스타일 */
+.card-container {
+    display: flex;  /* flexbox 레이아웃을 사용 */
+    flex-direction: row;  /* 카드들을 가로로 배치 */
+    gap: 30px;  /* 카드 사이에 30px 간격을 둔다 */
+    justify-content: center;  /* 카드를 수평 중앙 정렬 */
+    align-items: center;  /* 카드를 수직 중앙 정렬 */
 }
 
+/* 개별 카드 스타일 */
 .card1, .card2, .card3 {
-    background-color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    width: 100px;
-    height: 100px;
+    background-color: white;  /* 카드 배경을 흰색으로 설정 */
+    font-size: 30px;  /* 카드 내 글씨 크기를 30px로 설정 */
+    font-weight: bolder;  /* 글씨를 굵게 설정 */
+    text-align: center;  /* 텍스트를 중앙 정렬 */
+    width: 100px;  /* 카드 너비를 100px로 설정 */
+    height: 100px;  /* 카드 높이를 100px로 설정 */
 }
