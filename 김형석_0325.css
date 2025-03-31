@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+}
+
+.title{
+    color: white;
+    font-family: playfair display;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.title h1{
+    text-align: left;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title p{
+    font-size: 20px;
+    margin: 15px;
+    padding: 0px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.white-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0px;
+}
+
+.main_text p{
+    color: white;
+    font-family: playfair display;
+    font-size: 70px;
+    text-align: center;
+    padding: 12px;
+}
+
+.circle{
+    border-width: 1px;
+    border-color:white;
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.circle2{
+    border-width: 1px;
+    border-color:white;
+    border-style: solid;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    margin: -300px 0px 0px -150px;
+    position: relative;
+}
+
+.Last_name h1{
+    color: white;
+    font-family: inter;
+    font-weight: normal;
+    font-size: 150px;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 70px;
+}
+
+.First_name h1{
+    color: white;
+    font-family: inter;
+    font-size: 130px;
+    text-align: center;
+    position: absolute;
+    top: 570px;
+    left: 70px;
+}
+
+.extra_details{
+    color: white;
+    font-family: inter;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    right: 350px;
+    bottom: 250px;  
+}
