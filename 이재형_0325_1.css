@@ -1,0 +1,20 @@
+body{
+    background-color: #8bc5ff;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1, .card2, .card3 {
+    background-color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}

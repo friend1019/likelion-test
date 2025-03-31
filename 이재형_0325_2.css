@@ -1,0 +1,145 @@
+/* 전체 페이지 스타일 설정 */
+body {
+    background-color: black;  /* 배경색을 검은색으로 설정 */
+    color: white;  /* 글자 색상을 흰색으로 설정 */
+    font-family: 'Playfair Display', serif;  /* Google 폰트 적용 */
+    margin: 0;  /* 기본 여백 제거 */
+    padding: 0;  /* 기본 패딩 제거 */
+}
+
+/* 헤더 컨테이너 (로고 + 네비게이션 바 포함) */
+.head_container {
+    height: 80px;  /* 헤더 높이 설정 */
+    display: flex;  /* Flexbox 레이아웃 적용 */
+    border-bottom: 1px solid white;  /* 하단 흰색 테두리 추가 */
+    padding: 5px;  /* 내부 여백 설정 */
+}
+
+/* 로고 컨테이너 */
+.main_logo_container {
+    width: 20%;  /* 전체 너비의 20% 차지 */
+    text-align: center;  /* 가운데 정렬 */
+    display: grid;
+    align-content: center; /**/
+}
+
+/* 네비게이션 바 스타일 */
+ul.navbar {
+    display: flex;  /* Flexbox 적용 */
+    list-style-type: none;  /* 리스트 스타일 제거 (점 없애기) */
+    flex-direction: row;  /* 가로 정렬 */
+    width: 70%;  /* 전체 너비의 70% 차지 */
+    justify-content: flex-end;  /* 오른쪽 정렬 */
+    align-items: center;  /* 세로 중앙 정렬 */
+}
+
+/* 네비게이션 메뉴 스타일 */
+.navbar_list {
+    padding: 5%;  /* 내부 여백 */
+    width: 70px;  /* 너비 고정 */
+    display: grid;  /* 그리드 레이아웃 사용 */
+    justify-content: center;  /* 텍스트 중앙 정렬 */
+    position: relative;  /* 세로 구분선 위치를 위한 relative 설정 */
+}
+
+/* 세로 구분선 */
+.navbar_list::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px; /* 세로 구분선의 두께 */
+    height: 20px; /* 세로 구분선 길이 (짧게 설정) */
+    background-color: #ccc; /* 구분선 색상 */
+}
+
+/* 마지막 항목은 구분선 제거 */
+.navbar_list:last-child::after {
+    content: none; /* 마지막 항목은 세로 구분선 없애기 */
+}
+
+/* 무한 롤링 텍스트 (스크롤 효과) */
+.rolling_container {
+    margin-top: 50px;  /* 상단 여백 */
+    font-size: 60px;  /* 글자 크기 */
+    width: 100%;  /* 전체 너비 */
+    overflow: hidden;  /* 넘치는 부분 숨김 */
+    white-space: nowrap;  /* 텍스트 줄 바꿈 방지 */
+    position: relative;  /* 상대 위치 설정 */
+}
+
+/* 롤링 트랙 (애니메이션 적용) */
+.rolling_track {
+    display: flex;  /* Flexbox 적용 */
+    animation: marquee 20s linear infinite;  /* 20초 동안 무한 반복 애니메이션 */
+}
+
+/* 롤링 텍스트 */
+.rolling_text {
+    display: inline-block;  /* 인라인 블록 요소 */
+    animation: marquee 10s linear infinite;  /* 10초 동안 무한 반복 애니메이션 */
+    padding-right: 0px;  /* 문장 사이의 공백 제거 */
+}
+
+/* 롤링 애니메이션 정의 */
+@keyframes marquee {
+    from {
+        transform: translateX(0);  /* 시작 위치 */
+    }
+    to {
+        transform: translateX(-30%);  /* 왼쪽으로 30% 이동 */
+    }
+}
+
+/* 메인 컨테이너 (이름 + 설명) */
+.main_container {
+    margin-top: 150px;  /* 상단 여백 */
+    display: flex;  /* Flexbox 적용 */
+    flex-direction: row;  /* 가로 정렬 */
+}
+
+/* 이름 스타일 */
+.name {
+    font-family: initial;  /* 기본 폰트 사용 */
+    font-weight: 500;  /* 글자 굵기 설정 */
+    border-radius: 50%;  /* 원형 디자인 */
+    font-size: 130px;  /* 글자 크기 */
+    width: 50%;  /* 전체 너비의 50% 차지 */
+    margin: 30px;  /* 외부 여백 */
+}
+
+/* 페이지 설명 */
+.content {
+    width: 50%;  /* 전체 너비의 50% 차지 */
+    display: grid;  /* 그리드 레이아웃 적용 */
+    justify-content: space-around;  /* 가로 간격 균등 배분 */
+    align-content: space-evenly;  /* 세로 간격 균등 배분 */
+}
+
+/* 작은 원(circle) 스타일 */
+.cercle1 {
+    position: absolute;  /* 절대 위치 설정 */
+    top: 300px;  /* 위에서 300px 떨어진 위치 */
+    left: 500px;  /* 왼쪽에서 500px 떨어진 위치 */
+    width: 300px;  /* 원의 너비 */
+    height: 300px;  /* 원의 높이 */
+    border: 1px solid white;  /* 흰색 테두리 */
+    border-radius: 50%;  /* 원 모양 */
+}
+
+/* 큰 원(circle) 스타일 */
+.cercle2 {
+    position: absolute;  /* 절대 위치 설정 */
+    left: -50px;  /* 화면 왼쪽 바깥으로 일부 이동 */
+    top: 350px;  /* 위에서 350px 떨어진 위치 */
+    width: 700px;  /* 원의 너비 */
+    height: 700px;  /* 원의 높이 */
+    border: 1px solid white;  /* 흰색 테두리 */
+    border-radius: 50%;  /* 원 모양 */
+}
+
+a {
+    text-decoration: none;  /* 밑줄 제거 */
+    color: inherit;         /* 부모 요소의 색상 상속 */
+}
