@@ -1,0 +1,71 @@
+body{
+    background-color: pink;/*배경 색상*/
+}
+/*
+/*ctrl+s로 저장 필수*/
+ .htag{
+    border: 1px solid red;
+    border-radius: 100px;/*모서리 둥글게 둥글게*/
+    margin: 30px; /*밖 여백*/
+    padding: 50px; /*테두리 안 여백*/
+}
+
+.h1h2{
+    display: flex;
+    flex-direction: row; /*축 설정 row=가로 정렬 column은 세로 정렬*/ 
+    gap: 30px;/*거리 늘리기*/
+}
+
+.h3h4{
+    display: flex;
+    flex-direction: row; /*축 설정 row=가로 정렬 column은 세로 정렬*/
+    gap: 100px; 
+}
+
+.h1h2 h1{ /*div 안에서 원하는 것만 지정하기*/
+    font-size: 80px; /*글자 크기 조절*/
+    font-weight: lighter;/*글자 굵기 normal, bold, bolder, lighter*/
+    color: blue;/*글자 색상*/
+
+}
+.htag h5{
+    text-align: right;/*글자 위치 left, rhght, center*/
+    
+} 
+
+
+.frontend{
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 30px;
+    
+}
+.rion h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: skyblue;
+
+}
+.h2h3{
+    color: blue;
+    font-weight: lighter;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px
+    ;
+
+
+}
+.h4h5{
+    color: blue;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.h4h5 h5{
+    color: blue;
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+}
