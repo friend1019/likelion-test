@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+.oneline{
+    color: white;
+    display:flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.선{
+    color: white;
+}
+.선 h2{
+    font-size: 50px;
+}
+
+
+.circle{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 100px;
+}
+.ㅅ{
+    color: white;
+}
