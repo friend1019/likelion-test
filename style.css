@@ -3,77 +3,123 @@ body{
     color: white;   
 }
 
-.pagename {
+.ProfileNav {
     font-family: 'Playfair Display', serif;
     display: flex;
-    justify-content: left;
     flex-direction: row;
+    gap:25px;
     align-items: center;
     border-bottom: 1px solid white;
-    font-size: 20px; /* 글자크기 */
-    font-weight: bold; /* 글자굵기 */
-    padding: 10px 20px;
-    justify-content: space-between;
+    padding: 10px 30px;
 }
 
-.nav {
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    gap: 10px;
-    justify-content: right;
-    flex-direction: row-reverse;    
-    align-items: center;
-    font-size: 20px; /* 글자크기 */
-    font-weight: bold; /* 글자굵기 */
+.logo {
+    margin-left: 3%;    /* 왼쪽 여백 */
+    font-weight: bolder; 
+    font-size: 2.5rem; /* 글자크기 1rem : 16px */
 }
 
-.display {
-    font-size: 20px; /* 글자크기 */
-    font-weight: bold; /* 글자굵기 */
-    font-family: 'Playfair Display', serif;
+.nav-links {
+    gap: 40px; /* 링크 사이 여백 */
     display: flex;
-    justify-content: center;
     flex-direction: row;
     align-items: center;
-    color: wheat;
 }
 
-.SUCHEOL{
-    font-family: 'Playfair Display', serif;
-    display: flex;
-    font-size: 30px; /* 글자크기 */
-    flex-direction: row;
-    text-align: center;
+.nav-links li {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    font-size: 1.3rem; /* 글자크기 */
+    font-weight: bold; /* 글자굵기 */
+    color: white; /* 글자색상 */
+}
+
+.nav-links li a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: white; /* 링크 색상 */
+}
+
+.nav-links span {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    height : 20px; /* 높이 */
+    width: 1px; /* 너비 */
+    background-color: white; /* 색상 */
+}
+
+/*롤링텍스트*/
+.RolledTop{
+    position: relative; /* 상대 위치 지정 */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    margin-top: 10px; /* 위쪽 여백 */
+}
+
+.RolledTop .wrapper {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    animation: roll 50s linear infinite; /* 애니메이션 설정 */                            
+    white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+.RolledTop p {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    font-size: 60px; /* 글자크기 */
+    font-weight: 400; /* 글자굵기 */
+    font-family: 'Playfair Display', serif; /* 폰트 설정 */
+}
+/*롤링애니메이션*/
+@keyframes roll {
+    0% { transform: translateX(0%); } 
+    100% { transform: translateX(-100%); } 
+}
+
+.CircleContainer {
+    position: relative; /* 상대 위치 지정 */
+    width: 100%; /* 너비 100% */                    
+    height: 100vh; /* 높이 100vh */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    z-index: 0; /*가장 아래쪽에 배치되는 요소로 설정*/
+}
+
+.circle1, .circle2 {
+    position: absolute; /* 절대 위치 지정 */
+    border-radius: 50%; /* 원형으로 설정 */
+    border: 1px solid white; /* 테두리 설정 */
 }
 
 .circle1 {
-    border: 1px solid white; /* 요소 테두리 */
-    width: 300px;   /* 원의 너비 */
-    height: 300px;  /* 원의 높이 */
-    transform: translate(-50%, -50%); /* 원을 중앙에 위치시키기 위한 변환 */
-    position: absolute; /* 절대 위치 지정 */
-    top: 50%; /* 화면 중앙에 위치시키기 위한 값 */  
-    left: 50%;
-    border-radius: 50%;
+    width: 850px; /* 너비 850px */
+    height: 850px; /* 높이 850px */
+    top: 25%;  
+    left: -3%;     
 }
 
 .circle2 {
-    position: absolute;
-    left: -40px; /* 왼쪽 여백 */
-    bottom: -50px; /* 아래 여백 */
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white; /* 요소 테두리 */
+    width: 350px; /* 너비 350px */
+    height: 350px; /* 높이 350px */
+    top: 10%;  
+    left: 40%;     
 }
 
-.circle2 h1, .circle2 h2 {
-    font-size: 80px; /* 글자크기 */
-    font-weight: bold; /* 글자굵기 */
-    align-content: flex-end;
-    font-family: 'Inter', serif;
+.MainContainer {
+    position: absolute; /* 절대 위치 지정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 좌측에 위치 */
+    width: 100%; /* 너비 100% */
+    height: 100%; /* 높이 100 */
+    z-index: 1; /* 가장 위쪽에 배치되는 요소로 설정 */
+}
+
+.MainTitle p {
+    font-size: 130px; /* 글자크기 */
+    font-weight: 600; /* 글자굵기 */
+    font-family: "Inter", sans-serif; /* 폰트 설정 */
+    margin-left: 56px;
+    margin-top: 530px; /* 위쪽 여백 */
+}
+
+.SubText {
+    font-size: 13px; /* 글자크기 */
+    font-family: "Inter", sans-serif; /* 폰트 설정 */
+    position : absolute; /* 절대 위치 지정 */
+    top: 715px; /* 상단에 위치 */
+    right: 80px;    /* 우측에 위치 */   
+    text-align: left; /* 왼쪽 정렬 */
 }
