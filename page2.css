@@ -1,0 +1,137 @@
+/* 기본 설정 */
+body {
+    background-color: white; /* 배경색 흰색 */
+    color: black;             /* 기본 글자색 검정 */
+    overflow-x: hidden;       /* 수평 스크롤 숨김 */
+    margin: 0;                /* 브라우저 기본 여백 제거 */
+}
+
+/* 네비게이션 바 전체 설정 */
+.ProfileNav {
+    display: flex;                      /* 내부 요소 가로 정렬 */
+    justify-content: space-between;    /* 양쪽 정렬 */
+    align-items: center;               /* 세로 가운데 정렬 */
+    padding: 10px 30px;                /* 상하 10px, 좌우 30px */
+    border-bottom: 1px solid black;    /* 아래 테두리 */
+    font-family: "Playfair Display", serif; /* 글꼴 지정 */
+}
+
+/* 로고 스타일 */
+.logo {
+    font-size: 40px;     /* 큰 글씨 */
+    font-weight: 800;    /* 굵은 글씨 */
+    margin: 10px;        /* 바깥 여백 */
+}
+
+/* 네비게이션 링크 전체 박스 */
+.nav-links {
+    display: flex;
+    flex-direction: row;  /* 가로 정렬 */
+    align-items: center;
+    gap: 40px;            /* 항목 사이 간격 */
+}
+
+/* 각 링크 항목 (li) 설정 */
+.nav-links li {
+    list-style: none;     /* 점 없애기 */
+    font-size: 22px;
+}
+
+/* a 태그 설정 (링크 자체) */
+.nav-links li a {
+    text-decoration: none;  /* 밑줄 제거 */
+    color: black;           /* 색상 */
+    transition: color 0.3s; /* 마우스 올렸을 때 부드럽게 색 변경 */
+}
+
+/* 마우스 올렸을 때 색상 변경 */
+.nav-links li a:hover {
+    color: #bbbbbb;
+}
+
+/* 메뉴 사이 구분선 (세로 선) */
+.nav-links span {
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: black;
+}
+
+/* 프로필 상단 레이아웃 */
+.Profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 프로필 컨테이너 (이미지 + 텍스트) */
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+/* h1 스타일 - 이름 강조 */
+.h1 {
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    font-family: "inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* 프로필 이미지 여백 */
+.logo {
+    margin: 10px;
+}
+
+/* 소개 텍스트 스타일 */
+.profile-container p {
+    padding: 5px;
+    background-color: yellow;
+    color: blue;
+    border: 1.5px solid blue;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+/* 방문자 수 박스 스타일 */
+.visitor {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+/* 방문자 수 텍스트 */
+.visitor h2 {
+    font-family: "inter", sans-serif;
+    margin: 10px 5px;
+    font-size: 15px;
+}
+
+/* 연락처 아이콘 리스트 스타일 */
+.Contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 간격 자동 조정 */
+    list-style-type: none;          /* 점 제거 */
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 구글 material icon 정렬용 마진 */
+.material-icons {
+    margin: 10px 5px;
+}
+
+/* 프로필 본문 레이아웃 (좌우 나뉨) */
+.Profile_body {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 자기소개, 정보, 프로젝트 영역 하단 구분선 */
+.Introduction, .Information, .Project-list {
+    border-bottom: 1px solid black;
+}
