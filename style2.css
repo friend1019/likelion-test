@@ -1,0 +1,147 @@
+body {
+    background-color: white ;
+    color: black ;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+.ProfileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid black;
+    font-family: "Playfair Display", serif;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 22px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #bbbbbb;
+}
+
+.nav-links span {
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: black;
+}
+
+.profile-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.profile-container h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.profile-container p{
+    border: 1.5px solid blue;
+    background-color: yellow;
+    border-radius: 50px;
+    font-size: 13px;
+    color: blue;
+    padding: 5px;
+    margin: 2px 5px 0 0;
+    display: inline-block;
+}
+
+.visitor{
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    margin-right: 100px;
+}
+.visitor h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px; 
+}
+
+.profile-body{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    gap: 70;
+}
+
+.profile-left{
+    width: 30%;
+}
+
+.profile-right{
+    width: 60%;
+    padding: 40px 0 40px 50px;
+    box-sizing: border-box;
+}
+
+.introduction,
+.information,
+.project-list{
+    border-bottom: 1px solid;
+}
+
+.information h2{
+    font-weight: 500px;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+}
+
+.information h2,
+.project-list h2,
+.contact h2{
+    font-weight: 600;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+}
+
+.information h3,
+.project-list h3{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.project-list h3 a{
+    color: #1E1E95;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact .img{
+    width: 40px;
+    height: 40px;
+}
