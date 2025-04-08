@@ -52,41 +52,64 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 60px 10px;
 }
 
 .profile-container{
     display:flex;
     align-items: center;
-    margin-left: 70px;
+    gap: 20px;
 }
 
+.profile-container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.profile-container h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.profile-container p{
+    font-size: 13px;
+    background-color: #ffd700;
+    color: #1e1e95;
+    border: 1.5px solid #1E1E95;
+    border-radius: 50px;
+    margin: 2px 5px 0 0;
+    padding: 5px 10px;
+    display: inline-block;
+}
 .profile-text{
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 25px;
 }
 
-.profile-text p{
-    font-size: 13px;
-    background-color: yellow;
-    color: blue;
-    border: 1.5px solid black;
-    border-radius: 50px;
+.visiter{
+    margin-right: 100px;
     padding: 5px;
+    border: 1px solid #ffd700;
+    border-radius: 15px;
 }
 
 .visiter h2{
-    border: 1px solid #ffd700;
-    border-radius: 15px;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    align-items: center;
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 25px;
-    margin-right: 100px;
 }
 
 .Profile-body{
     display: flex;
-    flex-direction: row;
     width: 100%;
     box-sizing: border-box;
     align-items: flex-start;
@@ -99,7 +122,7 @@ body {
 }
 
 .Introduction,
-.Infomation,
+.Information,
 .Project-list{
     border-bottom: 1px solid black;
 }
@@ -108,12 +131,90 @@ body {
     font-weight: 500;
     font-size: 23px;
     font-family: "Inter", sans-serif;
-
 }
 
 .Information h2,
 .Project-list h2,
 .Contact h2{
     font-weight: 600;
-    font-size: ;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+}
+
+.Infomation h3,
+.Project-list h3{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.Project-list h3 a{
+    color: #1E1E95;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Profile-right{
+    width: 60%;
+    padding: 40px 0 40px 50px;
+    box-sizing: border-box;
+}
+
+.image-slider{
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    aspect-ratio: 16/9;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+.prev,
+.next{
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.prev:hover,
+.next:hover{
+    color: white;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.image-counter{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 14px;
 }

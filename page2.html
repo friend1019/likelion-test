@@ -22,14 +22,14 @@
 
     <div class="Profile-top">
         <div class="profile-container">
-            <img src="image.png" alt="이미지">
+            <img src="a.jpg" alt="프로필 이미지" class="profile-image">
             <div class="profile-text">
                 <h1>김형석</h1>
-                <p>#frontend #programmer #fuckingletsgo</p>
+                <p>#frontend #programmer #javascript</p>
             </div>
         </div>
         <div class="visiter">
-            <h2>방문자 수 : 0명</h2>
+            <h2>방문자 수: <span id="visiter-count">0</span>명</h2>
         </div>
     </div>
 
@@ -48,15 +48,28 @@
             <div class="Project-list">
                 <h2>프로젝트 목록 project list</h2>
                 <h3>간단한 자기소개 페이지 만들기
-                <br>동아리 박람회 페이지 만들기</h3>
+                <br>동아리 박람회 페이지 만들기
+                <br> <a href="#">더 보러 가기</a>
+            </h3>
             </div>
             <div class="Contact">
                 <h2>연락처 contact</h2>
+                <a href="#"><img src="Github.svg" alt="github" style="margin-right: 10px;"></a>
+                <a href="#"><img src="mail.svg" alt="mail" style="margin-right: 10px;"></a>
+                <a href="#"><img src="Phone.svg" alt="phone" style="margin-right: 10px;"></a>
+                <a href="#"><img src="Facebook.svg" alt="facebook" style="margin-right: 10px;"></a>
+                <a href="#"><img src="Instagram.svg" alt="instagram" style="margin-right: 10px;"></a>
             </div>
         </div>
         <div class="profile-right">
-
+            <div class="image-slider">
+                <button class="prev">&#8592;</button>
+                <img id="slider-image" src="image_likelion.jpg" alt="slider image">
+                <button class="next">&#8594;</button>
+                <div class="image-counter" id="image-counter">01 / 04</div>
+            </div>
         </div>
     </div>
+    <script src="04_08.js"></script>
 </body>
 </html>
