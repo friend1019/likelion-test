@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+    color: white;   
+}
+
+.ProfileNav {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px 30px;
+}
+
+.logo {
+    margin-left: 3%;    /* 왼쪽 여백 */
+    font-weight: bolder; 
+    font-size: 2.5rem; /* 글자크기 1rem : 16px */
+}
+
+.nav-links {
+    gap: 40px; /* 링크 사이 여백 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    font-size: 1.3rem; /* 글자크기 */
+    font-weight: bold; /* 글자굵기 */
+    color: white; /* 글자색상 */
+}
+
+.nav-links li a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: white; /* 링크 색상 */
+}
+
+.nav-links span {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    height : 20px; /* 높이 */
+    width: 1px; /* 너비 */
+    background-color: white; /* 색상 */
+}
+
+/*롤링텍스트*/
+.RolledTop{
+    position: relative; /* 상대 위치 지정 */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    margin-top: 10px; /* 위쪽 여백 */
+}
+
+.RolledTop .wrapper {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    animation: roll 50s linear infinite; /* 애니메이션 설정 */                            
+    white-space: nowrap; /* 줄 바꿈 방지 */
+}
+
+.RolledTop p {
+    display: inline-block; /* 인라인 블록으로 설정 */
+    font-size: 60px; /* 글자크기 */
+    font-weight: 400; /* 글자굵기 */
+    font-family: 'Playfair Display', serif; /* 폰트 설정 */
+}
+/*롤링애니메이션*/
+@keyframes roll {
+    0% { transform: translateX(0%); } 
+    100% { transform: translateX(-100%); } 
+}
+
+.CircleContainer {
+    position: relative; /* 상대 위치 지정 */
+    width: 100%; /* 너비 100% */                    
+    height: 100vh; /* 높이 100vh */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    z-index: 0; /*가장 아래쪽에 배치되는 요소로 설정*/
+}
+
+.circle1, .circle2 {
+    position: absolute; /* 절대 위치 지정 */
+    border-radius: 50%; /* 원형으로 설정 */
+    border: 1px solid white; /* 테두리 설정 */
+}
+
+.circle1 {
+    width: 850px; /* 너비 850px */
+    height: 850px; /* 높이 850px */
+    top: 25%;  
+    left: -3%;     
+}
+
+.circle2 {
+    width: 350px; /* 너비 350px */
+    height: 350px; /* 높이 350px */
+    top: 10%;  
+    left: 40%;     
+}
+
+.MainContainer {
+    position: absolute; /* 절대 위치 지정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 좌측에 위치 */
+    width: 100%; /* 너비 100% */
+    height: 100%; /* 높이 100 */
+    z-index: 1; /* 가장 위쪽에 배치되는 요소로 설정 */
+}
+
+.mainTitle p {
+    font-size: 130px; /* 글자크기 */
+    font-weight: 600; /* 글자굵기 */
+    font-family: "Inter", sans-serif; /* 폰트 설정 */
+    margin-left: 56px;
+    margin-top: 530px; /* 위쪽 여백 */
+}
+
+.SubText {
+    font-size: 13px; /* 글자크기 */
+    font-family: "Inter", sans-serif; /* 폰트 설정 */
+    position : absolute; /* 절대 위치 지정 */
+    top: 715px; /* 상단에 위치 */
+    right: 80px;    /* 우측에 위치 */   
+    text-align: left; /* 왼쪽 정렬 */
+}
