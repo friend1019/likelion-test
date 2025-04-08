@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  position: relative;
+  padding: 100px 30px;
+  height: 100vh;
+}
+
+.bg-text {
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.2;
+}
+
+.name {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+}
+
+.name h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.circle {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.big-circle {
+  width: 400px;
+  height: 400px;
+  top: 200px;
+  left: -100px;
+}
+
+.small-circle {
+  width: 200px;
+  height: 200px;
+  top: 150px;
+  left: 400px;
+}
