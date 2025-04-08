@@ -1,0 +1,119 @@
+body {
+    background-color: white ;
+    color: black ;
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+.ProfileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid black;
+    font-family: "Playfair Display", serif;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links li {
+    list-style: none;
+    font-size: 22px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #bbbbbb;
+}
+
+.nav-links span {
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: black;
+}
+
+.Profile-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-container{
+    display:flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.profile-text{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.profile-text p{
+    font-size: 13px;
+    background-color: yellow;
+    color: blue;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.visiter h2{
+    border: 1px solid #ffd700;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.Profile-body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding:20px 30px;
+    gap: 70px;
+}
+
+.Profile-left{
+    width: 30%;
+}
+
+.Introduction,
+.Infomation,
+.Project-list{
+    border-bottom: 1px solid black;
+}
+
+.Introduction h2{
+    font-weight: 500;
+    font-size: 23px;
+    font-family: "Inter", sans-serif;
+
+}
+
+.Information h2,
+.Project-list h2,
+.Contact h2{
+    font-weight: 600;
+    font-size: ;
+}
