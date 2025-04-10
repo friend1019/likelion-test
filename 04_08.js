@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const images=['image_likelion.jpg','img2.jpg','img3.jpg','img4.jpg'];
+    const images=['image/image_likelion.jpg','image/img2.jpg','image/img3.jpg','image/img4.jpg'];
     let currentIndex =0;
 
     const imageElement = document.getElementById('slider-image');
