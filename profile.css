@@ -1,0 +1,120 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+.profilenav{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    align-items: center;
+    padding:10px 30px;
+    border-bottom: 1px solid white;
+    font-family: "Playfair Display", serif;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-left: 3px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:40px
+}
+
+.nav-links li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*가로 구분선*/
+.nav-links span{
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: white;
+}
+.rolledtop{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.rolledtop .wrapper{
+    display: inline-block;
+    white-space: nowrap;
+    animation: roll 50s linear infinite;
+}
+
+.rolledtop p{
+    display: inline-block;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+@keyframes roll{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+
+.circle-container{
+    position: absolute;
+    width:800px;
+    height:500px;
+    bottom:0px;
+    overflow: hidden;
+    border: 1px solid none;
+}
+
+.circle-container .circle1{
+    position: absolute;
+    width:670px;
+    height:670px;
+    bottom: -250px;
+    left: -40px;
+    border: 1px solid white;
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+.circle-container .circle2{
+    position: absolute;
+    right:120px;
+    width: 240px;
+    height: 240px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.circle-container .name{
+    position: absolute;
+    bottom: -120px;
+    left:0px;
+    padding: 60px;
+    font-family: "Inter", sans-serif;
+    font-size: 120px;
+    color: white;
+
+}
+
+.ment{
+    position: absolute;
+    padding: 30px;
+    right: 60px;
+    bottom: 80px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 15px;
+
+
+}
